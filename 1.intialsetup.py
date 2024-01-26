@@ -1,4 +1,9 @@
-from langchain_openai import ChatOpenAI
+import os
+from langchain.llms import OpenAI
 
-llm_model = "gpt-4"  
-chat = ChatOpenAI(temperature=0.0, model=llm_model)
+
+os.environ['OPENAI_API_KEY'] =''
+llm=OpenAI(temperature=0.6)
+ans=llm("what is life")
+print(ans)
+
