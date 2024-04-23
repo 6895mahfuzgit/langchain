@@ -1,0 +1,6 @@
+
+Inintal Setup:
+
+pip install openai<1
+pip install langchain<1
+pip install pinecone-client<3
